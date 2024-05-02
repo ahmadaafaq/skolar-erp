@@ -1,20 +1,14 @@
-import "./App.css";
-import { Carousel } from "./components/carousel/Carousel";
- 
-// import footer from "./components/footer/footer"
-// import header from "./components/header/header"
-// import Navbar from "./components/navbar/navbar"
-// import { useState } from 'react'
-
-import { slides } from "./components/data/carouselData.json"
-
+import React from 'react';
+import { Carousel } from './components/carousel/Carousel';
+import slidesData from './components/data/carouselData.json';
 
 function App() {
+  const { slides } = slidesData;
+
   return (
     <div className="App">
-      {/* <navbar/> */}
+      <h1>My App</h1>
       <Carousel data={slides} />
-      
     </div>
   );
 }

@@ -1,64 +1,60 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 import "./Carousel.css";
 
 export const Carousel = ({ data }) => {
-  const [slide, setSlide] = useState(0);
+  const delay = 2500;
+  const [index, setIndex] = useState(0);
+  const timeoutRef = useRef(null);
 
-  const nextSlide = () => {
-    console.log('next slide', slide === data.length - 1);
-    setSlide(slide === data.length - 1 ? 0 : slide + 1);
-  };
-
-  const prevSlide = () => {
-    setSlide(slide === 0 ? data.length - 1 : slide - 1);
-  };
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      console.log('slide useeffect', slide);
-      nextSlide();
-    }, 3000);
-
-    // timer();
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === data.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
 
     return () => {
-      clearInterval(timer);
-    }
-  }, []);
-  console.log('slide ', slide);
+      resetTimeout();
+    };
+  }, [index, data.length]);
 
   return (
-    <div className="carousel">
-      <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
-      {data.map((item, idx) => {
-        return (
-          <img
-            src={item.src}
-            alt={item.alt}
+    <div className="slideshow">
+      <div
+        className="slideshowSlider"
+        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+      >
+        {data.map((item, idx) => (
+          <div
+            className="slide2"
             key={idx}
-            className={slide === idx ? "slide" : "slide slide-hidden"}
-          />
-        );
-      })}
-      <BsArrowRightCircleFill
-        onClick={nextSlide}
-        className="arrow arrow-right"
-      />
-      <span className="indicators">
-        {data.map((_, idx) => {
-          return (
-            <button
-              key={idx}
-              className={
-                slide === idx ? "indicator" : "indicator indicator-inactive"
-              }
-              onClick={() => setSlide(idx)}
-            ></button>
-          );
-        })}
-      </span>
+            style={{ backgroundImage: `url(${item.src})` }}
+          ></div>
+        ))}
+      </div>
+
+      <div className="slideshowDots">
+        {data.map((_, idx) => (
+          <div
+            key={idx}
+            className={`slideshowDot${index === idx ? " active" : ""}`}
+            onClick={() => {
+              setIndex(idx);
+            }}
+          ></div>
+        ))}
+      </div>
     </div>
   );
 };
