@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from "react";
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 import "./Carousel.css";
 
