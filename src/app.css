@@ -1,0 +1,12 @@
+.sub-header {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 0;
+  /* padding-bottom: 5px; */
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -75px;
+}
