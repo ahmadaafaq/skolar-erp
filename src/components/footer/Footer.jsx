@@ -12,8 +12,6 @@ import {
   FilledInput,
 } from "@mui/material";
 
-import "./footer.css";
-
 export default function Footer() {
   return (
     <>
