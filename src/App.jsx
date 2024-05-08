@@ -1,9 +1,11 @@
+
+import {Routes , Route } from "react-router-dom" 
+
+import Home from "./components/home/Home";
 import ResponsiveAppBar from "./components/appbar/Appbar";
-import ImgCarousel from "./components/carousel/Carousel";
 import Footer from "./components/footer/Footer";
-import ProductAndService from "./components/productAndService/ProductAndService";
-import CardContainer from "./components/cardContainer/CardContainer";
-import { cardData, sliderData } from "./data/data";
+import Contact from "./components/contact/Contact";
+import Advantages from "./components/advantages/Advantages";
 
 import "./app.css";
 
@@ -11,9 +13,11 @@ const App = () => {
   return (
     <>
       <ResponsiveAppBar />
-      <ImgCarousel sliderImages={sliderData} />
-      <CardContainer cardData={cardData} />
-      <ProductAndService />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/advantage-of-school" element={<Advantages />} />
+      </Routes>
       <Footer />
     </>
   );
