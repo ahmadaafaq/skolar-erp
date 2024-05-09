@@ -55,6 +55,33 @@ const cardData = [
   },
 ];
 
+const featureCardData = [
+  {
+    title: "Successful Years",
+    img: "/newcard1.png",
+  },
+  {
+    title: "Happy Clients",
+    img: "/study22.png",
+  },
+  {
+    title: "Customer Satisfaction",
+    img: "/study3333.png",
+  },
+  {
+    title: "Reports",
+    img: "/study4444.png",
+  },
+  {
+    title: "Modules",
+    img: "/study55.png",
+  },
+  {
+    title: "Students",
+    img: "/study66.png",
+  },
+];
+
 const pages = [
   {
     title: "Home",
@@ -82,4 +109,4 @@ const pages = [
   },
 ];
 
-export { sliderData, cardData, pages };
+export { sliderData, cardData, pages, featureCardData };
