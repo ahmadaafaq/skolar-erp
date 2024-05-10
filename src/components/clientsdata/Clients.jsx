@@ -1,34 +1,33 @@
 
 import React from 'react'
 
-import BasicCard from '../card/Card';
-import Card from '../card/Card'
-import { Box } from '@mui/material';
+import { Box, Typography, Container } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 
 const Clients = ({ clientsData }) => {
     return (
-        <>
-            <h1 style={{ textAlign: 'center' }} >Our Clients</h1>
-            <Carousel autoPlay={true}
+        <Container sx={{marginTop: "50px"}}>
+            <Typography variant='h4' sx={{ textAlign: "center", fontWeight: "600", marginBottom: "50px" }}>
+                {"Our Clients"}
+            </Typography>
+            <Carousel autoPlay={false}
                 sx={{
                     display: 'flex',
                     justifyContent: 'space-between',
                     flexWrap: 'wrap',
                 }}
             >
-
                 {clientsData.map((client, i) => (
-
                     <Box sx={{
-                        marginLeft: '20cm', height: '300px', width: 'px', borderRadius: '20px',
+                        display: 'flex', justifyContent: "space-evenly", height: '300px', width: 'px', borderRadius: '20px',
                     }}>
-
-                        <img height={200} key={i} src={client.img} />
+                        <img height={200} key={i} src={clientsData[i].img} />
+                        <img height={200} key={i} src={clientsData[i + 1] ? clientsData[i + 1].img : clientsData[0]?.img} />
+                        <img height={200} key={i} src={clientsData[i + 2] ? clientsData[i + 2].img : clientsData[1]?.img} />
                     </Box>
                 ))}
             </Carousel>
-        </>
+        </Container>
     )
 }
 
