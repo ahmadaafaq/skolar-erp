@@ -18,7 +18,7 @@ function Item(props) {
           height: "120px",
           width: "60%",
           position: "absolute",
-          top: "15%",
+          top: "7%",
           left: "5%",
           fontStyle: "inherit",
         }}

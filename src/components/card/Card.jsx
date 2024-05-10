@@ -48,7 +48,11 @@ export default function BasicCard({ cardData }) {
           >
             {cardData.number}
           </Typography>
-          <Typography variant="h6" color="text.secondary">
+          <Typography
+            // variant="h6"
+            color="text.secondary"
+            sx={{ fontSize: "16px", fontWeight: "700" }}
+          >
             {cardData.title}
           </Typography>
         </CardContent>

@@ -71,10 +71,19 @@ export default function FeatureCardItem({ card }) {
                   position: "relative",
                 }}
               >
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{ fontWeight: 700, fontFamily: "inherit" }}
+                >
                   {card.title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ fontWeight: 900 }}
+                >
                   {card.description}
                 </Typography>
               </CardContent>
