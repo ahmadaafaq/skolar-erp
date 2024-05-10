@@ -18,7 +18,8 @@ function ResponsiveAppBar() {
         sx={{
           padding: "0 60px 0 45px",
           background:
-            "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(200,43,227,1) 35%, rgba(0,212,255,1) 100%)",
+            "linear-gradient(90deg, rgba(209,209,209,1) 0%, rgba(190,199,204,1) 48%);"
+
         }}
       >
         <Toolbar disableGutters>
