@@ -30,6 +30,9 @@ export default function BasicCard(props) {
           <Typography variant="body2" color="text.secondary">
             {props.text}
           </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {props?.num}
+          </Typography>
         </CardContent>
       </CardActionArea>
     </Card>

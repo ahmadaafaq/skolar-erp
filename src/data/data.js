@@ -81,5 +81,47 @@ const pages = [
     href: "/contact",
   },
 ];
+const dataFact = [
+  {
+    title: "School",
+    img: "/school.png",
+    num:"1000"
+  },
+  {
+    title: "Teachers",
+    img: "/teacher.png",
+    num:"4000"
+  },
+  {
+    title: "Students",
+    img: "/student.png",
+    num:"100000"
+  },
+  {
+    title:'Distributor',
+    img: '/handshake.png',
+    num:"25"
+  }
+];
+const clientsData=[
+  {
+    img:"/image1.png"
+  },
+  {
+    img:"/image2.jpg"
+  },
+  {
+    img:"/image3.jpg"
+  },
+  {
+    img:"/image4.jpg"
+  },
+  {
+    img:"/image5.jpg"
+  },
+  {
+    img:"/image6.jpg"
+  },
+]
 
-export { sliderData, cardData, pages };
+export { sliderData, cardData, pages ,dataFact, clientsData};
