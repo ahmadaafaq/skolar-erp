@@ -8,38 +8,22 @@ import Button from "@mui/material/Button";
 import { pages } from "../../data/data";
 
 import "./appbar.css";
+import Logo from "../logo/logo";
 
 function ResponsiveAppBar() {
   return (
-    <AppBar
-      position="static"
-      sx={{ backgroundColor: "white", height: "122px" }}
-    >
+    <AppBar position="static" sx={{ backgroundColor: "white" }}>
       <Container
         sx={{
-          padding: "0 60px 0 45px", maxWidth: "1400px !important",
-          background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(200,43,227,1) 35%, rgba(0,212,255,1) 100%)'
+          padding: "0 60px 0 45px",
+          maxWidth: "1400px !important",
+          background:
+            "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(200,43,227,1) 35%, rgba(0,212,255,1) 100%)",
         }}
       >
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-          <Box
-            sx={{
-              height: "120px",
-              width: "250px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center"
-            }}
-          >
-            <a href="/">
-              <img
-                alt="Logo"
-                src="/logo.png"
-                style={{ width: "200px", height: "72px" }}
-              />
-            </a>
-          </Box>
+          <Logo />
           <Box
             sx={{
               flexGrow: 1,
@@ -47,7 +31,7 @@ function ResponsiveAppBar() {
                 xs: "none",
                 md: "flex",
                 justifyContent: "flex-end",
-                paddingRight: "35px"
+                paddingRight: "35px",
               },
             }}
           >
