@@ -6,6 +6,7 @@ import FeatureCardItem from "./featureCardItem";
 export default function FeatureCard() {
   return (
     <Container
+      maxWidth={"false"}
       sx={{
         display: "flex",
         flexWrap: "wrap",

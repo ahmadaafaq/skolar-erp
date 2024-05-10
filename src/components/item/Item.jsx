@@ -3,12 +3,12 @@ import { Container, Box, Typography, Card } from "@mui/material";
 function Item(props) {
   return (
     <Container
+      maxWidth={"false"}
       sx={{
         height: "800px",
         backgroundImage: `url(${props.src})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        maxWidth: "1400px !important",
       }}
     >
       <Box

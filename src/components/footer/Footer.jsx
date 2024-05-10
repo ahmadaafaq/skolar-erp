@@ -17,10 +17,10 @@ export default function Footer() {
   return (
     <>
       <Container
+        maxWidth={"false"}
         sx={{
           backgroundColor: "black",
           color: "white",
-          maxWidth: "1400px !important",
           marginTop: "6%",
           paddingBottom: "50px",
         }}
@@ -82,13 +82,13 @@ export default function Footer() {
                   <InputAdornment position="end">
                     <IconButton
                       aria-label="email"
-                      onClick={() => {}}
-                      onMouseDown={() => {}}
+                      onClick={() => { }}
+                      onMouseDown={() => { }}
                       sx={{
                         borderRadius: "5%",
                         backgroundColor: "red",
                       }}
-                      // edge="end"
+                    // edge="end"
                     >
                       <SendIcon />
                     </IconButton>

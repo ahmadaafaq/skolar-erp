@@ -14,9 +14,9 @@ function ResponsiveAppBar() {
   return (
     <AppBar position="static" sx={{ backgroundColor: "white" }}>
       <Container
+        maxWidth={"false"}
         sx={{
           padding: "0 60px 0 45px",
-          maxWidth: "1400px !important",
           background:
             "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(200,43,227,1) 35%, rgba(0,212,255,1) 100%)",
         }}
