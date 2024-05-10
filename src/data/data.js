@@ -154,7 +154,7 @@ const factData = [
     num: '10000+'
   },
   {
-    title: "Distributers",
+    title: "Distributor",
     href: "/handshake.png",
     num: '25+'
   },
