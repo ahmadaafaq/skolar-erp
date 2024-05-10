@@ -2,13 +2,13 @@
 const sliderData = [
   {
     title: "School Management System with Secure Cloud Storage",
-    img: "/pexels-anastasiya-gepp-654466-1462630.jpg",
+    img: "/pexels-hillaryfox-1595385.jpg",
     subTitle:
       "Most Innovative School Management ERP & Best Digital Transformation in Education System",
   },
   {
     title: "Best School ERP Software",
-    img: "/pexels-hillaryfox-1595385.jpg",
+    img: "/pexels-anastasiya-gepp-654466-1462630.jpg",
     subTitle:
       "Enabling connected schools, unlocking new possibilities. Anintegrated ecosystem of educational products that work together seamlessly.",
   },
@@ -34,57 +34,58 @@ const sliderData = [
 
 const featureCardData = [
   {
-    title: "Successful Years",
+    title: "Class And Section",
     img: "/newcard1.png",
     description:
-      "Access employee details, including their designation, pay head, amount type, and unit, all conveniently displayed in our module.",
+      "A dashboard showcasing various classes and sections enhances productivity while minimizing power consumption.",
   },
   {
-    title: "Happy Clients",
-    img: "/newcard2.png",
+    title: "Syllabus",
+    img: "/newcard8.png",
     description:
-      "We create and organize large-scale events, including festivals and sporting events.",
+      "Effortlessly assign subjects to teachers based on class, with administrators easily managing class-specific subject lists.",
   },
   {
-    title: "Customer Satisfaction",
+    title: "Lesson Planning",
     img: "/newcard3.png",
     description:
       "Teachers use a mobile app for student attendance, and parents can access daily attendance reports.",
   },
   {
-    title: "Reports",
+    title: "Attendance Management",
     img: "/newcard4.png",
     description:
-      "Our module efficiently manages the coordination of student and employee pick-up and drop-off, along with the structure of fees.",
+      "Teachers use a mobile app to record student attendance, and parents can view daily attendance reports.",
   },
   {
-    title: "Modules",
+    title: "Admission Management",
     img: "/newcard5.png",
     description:
-      "Efficiently track bank and cash transactions, along with expenses and general vouchers using our module.",
+      "Efficiently handle student inquiries, streamline admission procedures, and register new students seamlessly.",
   },
   {
-    title: "Students",
+    title: "Circular",
     img: "/newcard6.png",
     description:
       "We'll keep parents informed with future updates through the Circular display on the mobile app, accompanied by notifications.",
   },
   {
-    title: "Students",
+    title: "Customizable Dashboard",
+    img: "/newcard9.png",
+    description:
+      "The Dashboard offers a quick overview of overall student and teaching staff performance, with detailed data accessible for deeper insights.",
+  },
+  {
+    title: "Fees Management",
+    img: "/newcard2.png",
+    description:
+      "Our module processes school payments, issues fee receipts, and updates the fee register, ensuring highly accurate data.",
+  },
+  {
+    title: "Transportation Allocation",
     img: "/newcard7.png",
     description:
-      "Simplify the book issue and return process for both teachers and students with our management module.",
-  },
-  {
-    title: "Students",
-    img: "/newcard8.png",
-    description:
-      "Explore the list of hostel types, student occupancy, residing students count, and cost structure with our module.",
-  },
-  {
-    title: "Students",
-    img: "/newcard9.png",
-    description: "Display the specifics of a typical meal with our module.",
+      "Efficiently allocate transportation with specified start and end dates using our module.",
   },
 ];
 
@@ -117,7 +118,7 @@ const cardData = [
   {
     title: "Students",
     img: "/study66.png",
-    number: "2500+",
+    number: "00+",
   },
 ];
 
