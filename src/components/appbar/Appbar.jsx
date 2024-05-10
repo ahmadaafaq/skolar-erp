@@ -6,9 +6,9 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 
 import { pages } from "../../data/data";
+import Logo from "../logo/logo";
 
 import "./appbar.css";
-import Logo from "../logo/logo";
 
 function ResponsiveAppBar() {
   return (
