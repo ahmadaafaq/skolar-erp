@@ -165,7 +165,7 @@ const factData = [
     num: "10000+",
   },
   {
-    title: "Distributers",
+    title: "Distributor",
     href: "/handshake.png",
     num: "25+",
   },
@@ -182,13 +182,13 @@ const clientData = [
     img: "/image3.jpg",
   },
   {
-    img: "/image4.jpg",
+    img: "/image4.png",
   },
   {
-    img: "/image5.jpg",
+    img: "/image5.png",
   },
   {
-    img: "/image6.jpg",
+    img: "/image6.png",
   },
 ];
 export { sliderData, cardData, pages, featureCardData, factData, clientData };
