@@ -18,18 +18,18 @@ const Clients = ({ clientsData }) => {
                 }}
             >
 
-            {clientsData.map((client, i) => (
+                {clientsData.map((client, i) => (
 
-                <Box sx={{ marginLeft:'20cm', height: '300px', width: 'px', borderRadius: '20px',
+                    <Box sx={{
+                        marginLeft: '20cm', height: '300px', width: 'px', borderRadius: '20px',
+                    }}>
 
-                }}>
-
-                    <img height={200} key={i} src={client.img} />
+                        <img height={200} key={i} src={client.img} />
                     </Box>
                 ))}
-                 </Carousel>
-                </>
-            )
+            </Carousel>
+        </>
+    )
 }
 
-            export default Clients
+export default Clients

@@ -81,5 +81,47 @@ const pages = [
     href: "/contact",
   },
 ];
+const factData = [
+  {
+    title: "School",
+    href: "/school.png",
+    num: '1000'
+  },
+  {
+    title: "Student",
+    href: "/student.png",
+    num :'100000'
+  },
+  {
+    title: "Teacher",
+    href: "/teacher.png",
+    num:'400'
+  },
+  {
+    title: "Distributer",
+    href: "/handshake.png",
+    num: '25'
+  },
+];
 
-export { sliderData, cardData, pages };
+const clientData=[
+  {
+    img:'/image1.png'
+  },
+  {
+    img:'/image2.jpg'
+  },
+  {
+    img:'/image3.jpg'
+  },
+  {
+    img:'/image4.jpg'
+  },
+  {
+    img:'/image5.jpg'
+  },
+  {
+    img:'/image6.jpg'
+  },
+]
+export { sliderData, cardData, pages, factData,clientData };
