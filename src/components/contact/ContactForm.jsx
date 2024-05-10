@@ -21,7 +21,7 @@ const ContactUs = () => {
 
     return (
         <Box sx={{ width: "40%", margin: "30px" }}>
-            <Typography variant="h4" sx={{ marginBottom: "20px" }}>
+            <Typography variant="h4" fontWeight={700} sx={{ marginBottom: "20px" , color:"white"}}>
                 Contact Us
             </Typography>
             <Box
