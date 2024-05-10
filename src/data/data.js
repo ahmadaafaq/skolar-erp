@@ -3,7 +3,8 @@ const sliderData = [
   {
     title: "School Management System with Secure Cloud Storage",
     img: "/pexels-anastasiya-gepp-654466-1462630.jpg",
-    subTitle: "afdffldsjlfslmj dflsafklmjlksaflk",
+    subTitle:
+      "Most Innovative School Management ERP & Best Digital Transformation in Education System",
   },
   {
     title: "Best School ERP Software",
@@ -14,17 +15,20 @@ const sliderData = [
   {
     title: "ERP Software For Schools in Delhi, India",
     img: "/pexels-naomi-shi-374023-1001914.jpg",
-    subTitle: "afdffldsjlfslmj dflsafklmjlksaflk",
+    subTitle:
+      "Most Innovative School Management ERP & Best Digital Transformation in Education Sector",
   },
   {
     title: "Education",
     img: "/pexels-pixabay-289737.jpg",
-    subTitle: "afdffldsjlfslmj dflsafklmjlksaflk",
+    subTitle:
+      "Enabling connected schools, unlocking new possibilities. Anintegrated ecosystem of educational products that work together seamlessly",
   },
   {
     title: "Purpose of Education system",
     img: "/pexels-zhuhehuai-716281.jpg",
-    subTitle: "afdffldsjlfslmj dflsafklmjlksaflk",
+    subTitle:
+      "Most Innovative School Management ERP & Best Digital Transformation in Education Sector",
   },
 ];
 
@@ -88,26 +92,32 @@ const cardData = [
   {
     title: "Successful Years",
     img: "/study11.png",
+    number: "15+",
   },
   {
     title: "Happy Clients",
     img: "/study22.png",
+    number: "400+",
   },
   {
     title: "Customer Satisfaction",
     img: "/study3333.png",
+    number: "99%",
   },
   {
     title: "Reports",
     img: "/study4444.png",
+    number: "4000+",
   },
   {
     title: "Modules",
     img: "/study55.png",
+    number: "35+",
   },
   {
     title: "Students",
     img: "/study66.png",
+    number: "2500+",
   },
 ];
 
@@ -141,43 +151,43 @@ const factData = [
   {
     title: "Schools",
     href: "/school.png",
-    num: '1000+'
+    num: "1000+",
   },
   {
     title: "Students",
     href: "/student.png",
-    num: '100000+'
+    num: "100000+",
   },
   {
     title: "Teachers",
     href: "/teacher.png",
-    num: '10000+'
+    num: "10000+",
   },
   {
     title: "Distributers",
     href: "/handshake.png",
-    num: '25+'
+    num: "25+",
   },
 ];
 
 const clientData = [
   {
-    img: '/image1.png'
+    img: "/image1.png",
   },
   {
-    img: '/image2.jpg'
+    img: "/image2.jpg",
   },
   {
-    img: '/image3.jpg'
+    img: "/image3.jpg",
   },
   {
-    img: '/image4.jpg'
+    img: "/image4.jpg",
   },
   {
-    img: '/image5.jpg'
+    img: "/image5.jpg",
   },
   {
-    img: '/image6.jpg'
+    img: "/image6.jpg",
   },
-]
+];
 export { sliderData, cardData, pages, featureCardData, factData, clientData };
