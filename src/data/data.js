@@ -139,24 +139,24 @@ const pages = [
 ];
 const factData = [
   {
-    title: "School",
+    title: "Schools",
     href: "/school.png",
-    num: '1000'
+    num: '1000+'
   },
   {
-    title: "Student",
+    title: "Students",
     href: "/student.png",
-    num: '100000'
+    num: '100000+'
   },
   {
-    title: "Teacher",
+    title: "Teachers",
     href: "/teacher.png",
-    num: '400'
+    num: '10000+'
   },
   {
-    title: "Distributer",
+    title: "Distributers",
     href: "/handshake.png",
-    num: '25'
+    num: '25+'
   },
 ];
 
