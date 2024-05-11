@@ -6,44 +6,32 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 
 import { pages } from "../../data/data";
+import Logo from "../logo/logo";
 
 import "./appbar.css";
 
 function ResponsiveAppBar() {
   return (
-    <AppBar
-      position="static"
-      sx={{ backgroundColor: "white", height: "122px" }}
-    >
+    <AppBar position="static" sx={{ backgroundColor: "white" }}>
       <Container
-        sx={{ padding: "0 60px 0 45px", maxWidth: "1400px !important" }}
+        maxWidth={"false"}
+        sx={{
+          padding: "0 60px 0 45px",
+          background:
+            "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(200,43,227,1) 35%, rgba(0,212,255,1) 100%)",
+        }}
       >
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-          <Box
-            sx={{
-              height: "120px",
-              width: "250px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <a href="/">
-              <img
-                alt="Remy Sharp"
-                src="/logo.png"
-                style={{ width: "200px", height: "72px" }}
-              />
-            </a>
-          </Box>
+          <Logo />
           <Box
             sx={{
               flexGrow: 1,
               display: {
                 xs: "none",
                 md: "flex",
-                justifyContent: "space-evenly",
+                justifyContent: "flex-end",
+                paddingRight: "35px",
               },
             }}
           >
@@ -54,7 +42,6 @@ function ResponsiveAppBar() {
                 sx={{
                   my: 2,
                   color: "black",
-                  display: "block",
                   fontWeight: "700",
                 }}
               >

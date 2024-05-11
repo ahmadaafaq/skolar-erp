@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import SendIcon from "@mui/icons-material/Send";
 import {
   Container,
@@ -10,23 +8,33 @@ import {
   InputAdornment,
   IconButton,
   FilledInput,
+  Box,
 } from "@mui/material";
+
+import Logo from "../logo/logo";
 
 export default function Footer() {
   return (
     <>
       <Container
+        maxWidth={"false"}
         sx={{
           backgroundColor: "black",
           color: "white",
-          maxWidth: "1400px !important",
           marginTop: "6%",
+          paddingBottom: "50px",
         }}
       >
-        <Grid container spacing={10}>
-          <Grid item sm={6} md={4} lg={3}>
-            <Typography variant="h7">
-              <img src="/logo.png" style={{ height: "70px" }} />
+        <Grid
+          container
+          spacing={10}
+          sx={{
+            justifyContent: "space-between",
+          }}
+        >
+          <Grid item sm={6} md={4} lg={4}>
+            <Logo />
+            <Typography sx={{ marginTop: "10px" }}>
               Amplify your school with the most credible cloud based management
               software to administer your school more efficiently by
               digitalising and automating day to day academic and administrative
@@ -34,8 +42,8 @@ export default function Footer() {
             </Typography>
           </Grid>
 
-          <Grid item sm={6} md={4} lg={3}>
-            <Typography variant="h5" sx={{ marginBottom: "25px" }}>
+          <Grid item sm={6} md={4} lg={4}>
+            <Typography variant="h4" sx={{ marginBottom: "25px" }}>
               Contact Information
             </Typography>
             <Typography variant="h7">
@@ -46,33 +54,17 @@ export default function Footer() {
             <Typography variant="h7">T: 10AM- 6PM</Typography>
           </Grid>
 
-          <Grid item sm={6} md={4} lg={3}>
-            <Typography variant="h5"> Quick Links</Typography>
-            <Link style={{ textDecoration: "none", color: "white" }}>
-              <Typography variant="h6"> About Us</Typography>
-
-              <Typography variant="h6"> Our services</Typography>
-              <Typography variant="h6"> Advantages of school ERP</Typography>
-              <Typography variant="h6"> FAQ</Typography>
-              <Typography variant="h6"> Career</Typography>
-            </Link>
-          </Grid>
-
-          <Grid item sm={6} md={4} lg={3}>
-            <Typography variant="h4" sx={{ margin: "5px" }}>
-              {" "}
-              Newsletter
-            </Typography>
-            <Typography variant="h7" sx={{ margin: "5px" }}>
-              {" "}
+          <Grid item sm={6} md={4} lg={4}>
+            <Typography variant="h4">{"Newsletter"}</Typography>
+            <Typography variant="h7">
               You will be notified when something new will appear.
             </Typography>
             <FormControl
               sx={{
-                m: 1,
-                width: "25ch",
+                display: "block",
                 backgroundColor: "gray",
-                borderRadius: "10px",
+                marginTop: "50px",
+                marginLeft: 0,
               }}
               variant="filled"
             >
@@ -83,18 +75,20 @@ export default function Footer() {
                 id="filled-adornment-email"
                 sx={{
                   backgroundColor: "#564f4f",
+                  width: "100%",
+                  borderRadius: 0,
                 }}
                 endAdornment={
                   <InputAdornment position="end">
                     <IconButton
                       aria-label="email"
-                      onClick={() => {}}
-                      onMouseDown={() => {}}
+                      onClick={() => { }}
+                      onMouseDown={() => { }}
                       sx={{
                         borderRadius: "5%",
                         backgroundColor: "red",
                       }}
-                      // edge="end"
+                    // edge="end"
                     >
                       <SendIcon />
                     </IconButton>

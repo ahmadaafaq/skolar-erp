@@ -15,6 +15,7 @@ function ProductInfo() {
     >
       <Typography
         sx={{
+          textShadow: "-1px 1px 5px rgba(0, 0, 0, 0.55)",
           color: "#cd211d",
           fontWeight: "800",
           textTransform: "uppercase",
