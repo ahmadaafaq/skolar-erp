@@ -44,6 +44,7 @@ function ResponsiveAppBar() {
                   my: 2,
                   color: "black",
                   fontWeight: "700",
+                  fontSize:"15px"
                 }}
               >
                 {page.title}
