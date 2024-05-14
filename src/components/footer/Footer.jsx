@@ -47,7 +47,7 @@ export default function Footer() {
               Contact Information
             </Typography>
             <Typography variant="h7">
-              A: B 57, East Jyoti N agar,Shahdra, Delhi 110093
+              A: B 57, East Jyoti Nagar,Shahdra, Delhi 110093
             </Typography>
             <Typography variant="h7">M: +91 7827565682</Typography>
             <Typography variant="h7">E: schoolerp2004@gmail.com</Typography>

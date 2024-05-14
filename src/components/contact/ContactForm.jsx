@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+import styled from '@emotion/styled';
 import {
     Box,
     Typography,
@@ -6,6 +8,20 @@ import {
     TextareaAutosize,
     Button,
 } from "@mui/material";
+
+let InputComp = styled(TextField)`
+& .MuiOutlinedInput-root {
+  & fieldset {
+    border-color: white;
+    border-radius: 25px;
+  }
+  &:hover {
+    fieldset {
+        border-color: #BB8FCE;
+    }
+  }
+}
+`;
 
 const ContactUs = () => {
     const [email, setEmail] = useState("");
@@ -21,7 +37,7 @@ const ContactUs = () => {
 
     return (
         <Box sx={{ width: "40%", margin: "30px" }}>
-            <Typography variant="h4" fontWeight={700} sx={{ marginBottom: "20px" , color:"white"}}>
+            <Typography variant="h4" fontWeight={700} sx={{ marginBottom: "20px", color: "white" }}>
                 Contact Us
             </Typography>
             <Box
@@ -34,32 +50,29 @@ const ContactUs = () => {
                     gap: "20px",
                 }}
             >
-                <TextField
+                <InputComp
                     label="Full Name"
                     variant="outlined"
                     fullWidth
                     value={firstName}
+                    autoFocus={true}
                     onChange={(e) => setFirstName(e.target.value)}
-                    sx={{ bgcolor: "white", borderRadius: "20px" }}
-
                 />
 
-                <TextField
+                <InputComp
                     label="Email"
                     variant="outlined"
                     fullWidth
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    sx={{ bgcolor: "white", borderRadius: "20px" }}
                 />
 
-                <TextField
+                <InputComp
                     label="Subject"
                     variant="outlined"
                     fullWidth
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
-                    sx={{ bgcolor: "white", borderRadius: "20px" }}
                 />
 
                 <TextareaAutosize
@@ -70,14 +83,14 @@ const ContactUs = () => {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     style={{
-                        backgroundColor: 'white',
-                        color: '#000000',
+                        backgroundColor: 'transparent',
+                        color: 'white',
                         resize: "none",
                         border: "1px solid #ccc",
                         padding: "10px",
                         fontFamily: "inherit",
                         fontSize: "inherit",
-                        borderRadius: "20px"
+                        borderRadius: "25px"
                     }}
                 />
 

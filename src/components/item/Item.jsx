@@ -14,7 +14,14 @@ function Item(props) {
       <Box
         sx={{
           color: "black",
-          textShadow: "-1px 1px 5px rgba(0, 0, 0, 0.55)",
+          textShadow: ` 1px 1px 0px white, 
+          1px -1px 0px white, 
+            -1px 1px 0px white, 
+            -1px -1px 0px white, 
+            1px 0px 0px white, 
+            0px 1px 0px white, 
+            -1px 0px 0px white, 
+            0px -1px 0px white;`,
           height: "120px",
           width: "60%",
           position: "absolute",
@@ -23,10 +30,10 @@ function Item(props) {
           fontStyle: "inherit",
         }}
       >
-        <Typography variant="h3" component="h2">
+        <Typography variant="h1" component="h1" fontWeight={600} fontFamily=" Georgia, serif">
           {props.title}
         </Typography>
-        <Typography variant="h6" component="h6">
+        <Typography variant="h3" component="h3" fontWeight={700} letterSpacing={1}>
           {props.subTitle}
         </Typography>
       </Box>
