@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
 export default function BasicCard({ cardData }) {
-  const [cardZoom, setCardZoom] = React.useState(false);
+  // const [cardZoom, setCardZoom] = React.useState(false);
   return (
     <Card
       sx={{
@@ -17,15 +17,21 @@ export default function BasicCard({ cardData }) {
         textAlign: "center",
         background: "#D5CFF4",
         boxShadow: "2px -3px 27px 15px rgba(0,0,0,0.55);",
-        ...(cardZoom && {
-          height: 210,
-          width: 210,
-          transition: "0.3s",
+        transition: "transform 0.2s ease-in-out", // Add transition property here
+        ":hover": {
+          transform: "scale(1.1)",
           background: "white",
-        }),
+
+        }
+        // ...(cardZoom && {
+        //   height: 210,
+        //   width: 210,
+        //   background: "white",
+        // }),
       }}
-      onMouseOver={() => setCardZoom(true)}
-      onMouseOut={() => setCardZoom(false)}
+    // onMouseOver={() => setCardZoom(true)}
+    // onMouseOut={() => setCardZoom(false)}
+
     >
       <CardActionArea>
         <CardMedia
