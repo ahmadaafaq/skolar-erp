@@ -1,12 +1,10 @@
 import { Box } from "@mui/material";
 import imageSrc from "../../../public/purplebg.jpg";
 import ContactImg from "../../../public/imageimg.svg";
-
-import ContactForm from "./ContactForm"
+import ContactForm from "./ContactForm";
 
 export default function Contact() {
     return (
-        <>
             <Box
                 width="100%"
                 height="100%"
@@ -18,7 +16,8 @@ export default function Contact() {
                     backgroundImage: `url(${imageSrc})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                }}>
+                }}
+            >
                 <ContactForm />
                 <Box
                     sx={{
@@ -27,12 +26,8 @@ export default function Contact() {
                         backgroundImage: `url(${ContactImg})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
-
-
-
                     }}
-                > </Box>
+                ></Box>
             </Box>
-        </>
-    )
+    );
 }

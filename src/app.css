@@ -10,3 +10,7 @@
   justify-content: space-evenly;
   margin-top: -75px;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
