@@ -123,26 +123,14 @@ const cardData = [
 ];
 
 const pages = [
+  // {
+  //   title:"logo",
+  //   href:"/",
+  // },
   {
     title: "Home",
     href: "/",
   },
-  // {
-  //   title: "ADVANTAGE OF SCHOOL ERP",
-  //   href: "/advantage-of-school",
-  // },
-  // {
-  //   title: "Online Admission",
-  //   href: "/online-admission",
-  // },
-  // {
-  //   title: "FAQ",
-  //   href: "/faq",
-  // },
-  // {
-  //   title: "CAREER",
-  //   href: "/career",
-  // },
   {
     title: "CONTACT",
     href: "/contact",
