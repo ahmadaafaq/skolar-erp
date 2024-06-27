@@ -5,10 +5,15 @@ import Carousel from "react-material-ui-carousel";
 
 const Clients = ({ clientsData }) => {
   return (
-    <Container sx={{ marginTop: "50px", paddingBottom: "30px" }}>
+    <Container sx={{ marginTop: "8vh", marginBottom: "20vh" }}>
       <Typography
         variant="h4"
-        sx={{ textAlign: "center", fontWeight: "600", marginBottom: "50px" }}
+        sx={{
+          textAlign: "center",
+          fontWeight: "600",
+          marginBottom: "5vh",
+          fontSize: "2rem",
+        }}
       >
         {"Our Clients"}
       </Typography>
@@ -24,15 +29,16 @@ const Clients = ({ clientsData }) => {
           <Box
             sx={{
               display: "flex",
+              alignItems: "center",
               justifyContent: "space-evenly",
-              height: "300px",
-              width: "px",
+              height: "50vh",
+              width: "184vh",
               borderRadius: "20px",
             }}
           >
-            <img height={200} key={i} src={clientsData[i].img} />
+            <img height={"200vh"} key={i} src={clientsData[i].img} />
             <img
-              height={200}
+              height={"200vh"}
               key={i}
               src={
                 clientsData[i + 1]
@@ -41,7 +47,7 @@ const Clients = ({ clientsData }) => {
               }
             />
             <img
-              height={200}
+              height={"200vh"}
               key={i}
               src={
                 clientsData[i + 2]

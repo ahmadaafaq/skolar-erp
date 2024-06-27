@@ -1,29 +1,18 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 export default function Logo() {
   return (
     <Box
       sx={{
         display: "flex",
-        width: "234px",
-        border: "2px solid white",
+        width: "100px",
+        borderLeft: "20px solid white",
+        borderRight: "20px solid white",
+        borderTop: "4px solid white",
+        borderBottom: "10px solid white",
       }}
     >
-      <img src="/skolar-logo.png" style={{ height: "100px", width: "100px" }} />
-      <Typography
-        sx={{
-          display: "flex",
-          margin: "auto",
-          color: "red",
-          fontSize: "30px",
-          fontWeight: "800",
-          marginLeft: "17px",
-          width: "100px",
-          height: "100px",
-        }}
-      >
-        The Skolar
-      </Typography>
+      <img src="/logo1.jpg" style={{ height: "100px", width: "100px" }} />
     </Box>
   );
 }

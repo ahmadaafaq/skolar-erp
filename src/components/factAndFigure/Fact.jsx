@@ -18,20 +18,20 @@ const Fact = ({ factData }) => {
       <Typography
         sx={{
           textAlign: "center",
-          fontSize: "40px",
+          fontSize: "3rem",
           fontWeight: "900",
-          paddingTop: "20px",
+          paddingTop: "4vh",
         }}
       >
         Facts and Figures
       </Typography>
       <Box
-        sx={{ display: "flex", justifyContent: "space-evenly", margin: "20px" }}
+        sx={{ display: "flex", justifyContent: "space-evenly", margin: "5vh" }}
       >
         {factData.map((card, i) => (
           <Box
-            height={200}
-            width={200}
+            height={"35vh"}
+            width={"35vh"}
             my={2}
             gap={2}
             p={1}
@@ -44,8 +44,8 @@ const Fact = ({ factData }) => {
             }}
           >
             <img
-              height={70}
-              style={{ marginTop: "10px" }}
+              height={"95vh"}
+              style={{ marginTop: "3vh" }}
               key={i}
               src={card.href}
             />

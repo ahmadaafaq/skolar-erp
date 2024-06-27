@@ -21,7 +21,7 @@ export default function Footer() {
         sx={{
           backgroundColor: "black",
           color: "white",
-          marginTop: "6%",
+          marginTop: "5%",
           paddingBottom: "50px",
         }}
       >
@@ -43,20 +43,28 @@ export default function Footer() {
           </Grid>
 
           <Grid item sm={6} md={4} lg={4}>
-            <Typography variant="h4" sx={{ marginBottom: "25px" }}>
+            <Typography variant="h4" sx={{ marginBottom: "5vh" }}>
               Contact Information
             </Typography>
-            <Typography variant="h7">
+            <Typography variant="h7" sx={{ fontSize: ".9rem" }}>
               A: B 57, East Jyoti Nagar,Shahdra, Delhi 110093
             </Typography>
-            <Typography variant="h7">M: +91 7827565682</Typography>
-            <Typography variant="h7">E: schoolerp2004@gmail.com</Typography>
-            <Typography variant="h7">T: 10AM- 6PM</Typography>
+            <Typography variant="h7" sx={{ fontSize: ".9rem" }}>
+              M: +91 7827565682
+            </Typography>
+            <Typography variant="h7" sx={{ fontSize: ".9rem" }}>
+              E: schoolerp2004@gmail.com
+            </Typography>
+            <Typography variant="h7" sx={{ fontSize: ".9rem" }}>
+              T: 10AM- 6PM
+            </Typography>
           </Grid>
 
           <Grid item sm={6} md={4} lg={4}>
-            <Typography variant="h4">{"Newsletter"}</Typography>
-            <Typography variant="h7">
+            <Typography variant="h4" sx={{ marginBottom: "5vh" }}>
+              {"Newsletter"}
+            </Typography>
+            <Typography variant="h7" sx={{ fontSize: ".9rem" }}>
               You will be notified when something new will appear.
             </Typography>
             <FormControl
@@ -65,30 +73,34 @@ export default function Footer() {
                 backgroundColor: "gray",
                 marginTop: "50px",
                 marginLeft: 0,
+                borderRadius: "20px",
               }}
               variant="filled"
             >
-              <InputLabel htmlFor="filled-adornment-email">
+              <InputLabel htmlForm="filled-adornment-email">
                 Email Address
               </InputLabel>
               <FilledInput
                 id="filled-adornment-email"
                 sx={{
-                  backgroundColor: "#564f4f",
+                  backgroundColor:
+                    "linear-gradient(90deg, rgba(209,209,209,1) 0%, rgba(190,199,204,1) 48%);",
                   width: "100%",
                   borderRadius: 0,
                 }}
+                disableUnderline
+                autoComplete="off"
                 endAdornment={
                   <InputAdornment position="end">
                     <IconButton
                       aria-label="email"
-                      onClick={() => { }}
-                      onMouseDown={() => { }}
+                      onClick={() => {}}
+                      onMouseDown={() => {}}
                       sx={{
-                        borderRadius: "5%",
+                        borderRadius: "20px",
                         backgroundColor: "red",
                       }}
-                    // edge="end"
+                      // edge="end"
                     >
                       <SendIcon />
                     </IconButton>

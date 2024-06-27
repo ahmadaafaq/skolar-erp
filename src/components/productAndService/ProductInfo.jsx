@@ -7,9 +7,9 @@ function ProductInfo() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        width: "75%",
-        font: "17px",
-        padding: "50px 0px 20px",
+        width: "140vh",
+        font: "1.25rem",
+        padding: "15vh 0vh 7vh",
         fontFamily: "josh,sans-serif",
       }}
     >
@@ -19,10 +19,10 @@ function ProductInfo() {
           color: "#cd211d",
           fontWeight: "800",
           textTransform: "uppercase",
-          letterSpacing: "5px",
+          letterSpacing: ".4rem",
+          lineHeight: "2rem",
           display: "block",
           marginTop: "-0.3em",
-          margin: "10px",
         }}
         variant="h7"
       >
@@ -31,7 +31,7 @@ function ProductInfo() {
       <Typography
         variant="h3"
         sx={{
-          fontWeight: "500px",
+          fontWeight: "500",
           letterSpacing: "0em",
           marginBottom: "0.4em",
           fontSize: "3rem",
@@ -47,10 +47,9 @@ function ProductInfo() {
       <Typography
         variant="h6"
         sx={{
-          fontSize: "21px",
-          lineHeight: "28px",
+          fontSize: "1.4rem",
+          lineHeight: "5vh",
           color: "#1c1c1c",
-          margin: "0 0 10px",
           boxSizing: "border-box",
           display: "block",
           textAlign: "center",
