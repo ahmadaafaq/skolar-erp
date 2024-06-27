@@ -23,7 +23,9 @@ function ResponsiveAppBar() {
       >
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-          <Logo />
+          <Button href="/">
+            <Logo />
+          </Button>
           <Box
             sx={{
               flexGrow: 1,
