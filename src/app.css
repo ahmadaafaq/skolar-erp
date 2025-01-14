@@ -1,3 +1,18 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling on the page */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Ensure consistent sizing across elements */
+}
+
+/* Sub-header Styles */
 .sub-header {
   display: flex;
   justify-content: flex-end;
@@ -5,12 +20,26 @@
   /* padding-bottom: 5px; */
 }
 
+/* Card Container Styles */
 .card-container {
   display: flex;
   justify-content: space-evenly;
   margin-top: -75px;
+  overflow-x: hidden; /* Prevent horizontal scrolling within this container */
 }
 
+/* Hide Scrollbars Globally */
 ::-webkit-scrollbar {
-  display: none;
+  display: none; /* Hide scrollbars in WebKit-based browsers */
+}
+
+html {
+  scrollbar-width: none; /* Hide scrollbars in Firefox */
+}
+
+/* Optional: Ensure content stays within bounds */
+.container,
+.content {
+  max-width: 100%; /* Restrict elements to the viewport width */
+  overflow-x: hidden; /* Ensure no horizontal scrolling */
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import emailjs from "@emailjs/browser";
 import styled from "@emotion/styled";
 import {
   Box,
@@ -28,10 +28,42 @@ const ContactUs = () => {
   const [firstName, setFirstName] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
   const submitForm = (e) => {
     e.preventDefault();
-    console.log({ email, firstName, subject, message });
+
+    // Template parameters for EmailJS
+    const templateParams = {
+      email,
+      firstName,
+      subject,
+      message,
+    };
+
+    // Send email using EmailJS
+    emailjs
+      .send(
+        "service_zpbtoiy", // Replace with your EmailJS Service ID
+        "template_itdoyai", // Replace with your EmailJS Template ID
+        templateParams,
+        "LQy4mhZpQYrhNVFRR" // Replace with your EmailJS Public Key
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setSuccessMessage("Thank you! Your message has been sent.");
+          // Clear form fields
+          setEmail("");
+          setFirstName("");
+          setSubject("");
+          setMessage("");
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          setSuccessMessage("Sorry, something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
@@ -52,6 +84,7 @@ const ContactUs = () => {
           flexDirection: "column",
           gap: "20px",
         }}
+        onSubmit={submitForm}
       >
         <InputComp
           label="Full Name"
@@ -106,11 +139,22 @@ const ContactUs = () => {
             fontSize: "16px",
             alignSelf: "center",
           }}
-          onClick={submitForm}
         >
           Submit
         </Button>
       </Box>
+      {successMessage && (
+        <Typography
+          variant="body1"
+          sx={{
+            marginTop: "20px",
+            textAlign: "center",
+            color: "white",
+          }}
+        >
+          {successMessage}
+        </Typography>
+      )}
     </Box>
   );
 };
