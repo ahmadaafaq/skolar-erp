@@ -21,6 +21,7 @@ const Fact = ({ factData }) => {
           fontSize: "3rem",
           fontWeight: "900",
           paddingTop: "4vh",
+          color: "black",
         }}
       >
         Facts and Figures
