@@ -5,11 +5,7 @@ export default function Logo() {
     <Box
       sx={{
         display: "flex",
-        width: "100px",
-        borderLeft: "20px solid white",
-        borderRight: "20px solid white",
-        borderTop: "4px solid white",
-        borderBottom: "10px solid white",
+        border:"5px solid white"
       }}
     >
       <img src="/logo1.jpg" style={{ height: "100px", width: "100px" }} />
