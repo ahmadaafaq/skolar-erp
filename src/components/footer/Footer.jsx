@@ -1,69 +1,70 @@
 import SendIcon from "@mui/icons-material/Send";
-import {
-  Container,
-  Grid,
-  Typography,
-  FormControl,
-  InputLabel,
-  InputAdornment,
-  IconButton,
-  FilledInput,
-  Box,
-} from "@mui/material";
-
+import { Container, Grid, Typography, Box } from "@mui/material";
 import Logo from "../logo/logo";
 
 export default function Footer() {
   return (
-    <>
-      <Box
+    <Box
+      sx={{
+        width: "100%",
+        backgroundColor: "black",
+        color: "white",
+        padding: "20px 0",
+      }}
+    >
+      <Grid
+        container
+        spacing={4}
         sx={{
-          maxWidth:"100vw",
-          display:"flex",
-          backgroundColor: "black",
-          color: "white",
-          // marginTop: "5%",
-          // paddingBottom: "50px",
+          justifyContent: "space-between",
+          alignItems: "flex-start",
+          padding: "0 20px",
         }}
       >
+        {/* Logo and Description */}
         <Grid
-          container
-          spacing={10}
-          sx={{
-            padding:"10px",
-            justifyContent: "space-between",
-          }}
+          item
+          xs={12}
+          sm={6}
+          md={4}
+          sx={{ display: "flex", gap: 2, alignItems: "center" }}
         >
-          <Grid item sm={6} md={4} lg={4}>
+          <Box>
             <Logo />
-            <Typography sx={{ marginTop: "10px" }}>
-              Amplify your school with the most credible cloud based management
-              software to administer your school more efficiently by
-              digitalising and automating day to day academic and administrative
-              activities.
-            </Typography>
-          </Grid>
-
-          <Grid item sm={6} md={4} lg={4}>
-            <Typography variant="h4" sx={{ marginBottom: "5vh" }}>
-              Contact Information
-            </Typography>
-            <Typography variant="h7" sx={{ fontSize: ".9rem" }}>
-              A: B 57, East Jyoti Nagar,Shahdra, Delhi 110093
-            </Typography>
-            <Typography variant="h7" sx={{ fontSize: ".9rem" }}>
-              M: +91 7827565682
-            </Typography>
-            <Typography variant="h7" sx={{ fontSize: ".9rem" }}>
-              E: schoolerp2004@gmail.com
-            </Typography>
-            <Typography variant="h7" sx={{ fontSize: ".9rem" }}>
-              T: 10AM- 6PM
-            </Typography>
-          </Grid>
+          </Box>
+          <Typography
+            sx={{
+              marginTop: 2,
+              textAlign: "justify",
+              fontSize: "0.9rem",
+              lineHeight: 1.5,
+            }}
+          >
+            Amplify your school with the most credible cloud-based management
+            software to administer your school more efficiently by digitalizing
+            and automating day-to-day academic and administrative activities.
+          </Typography>
         </Grid>
-      </Box>
-    </>
+
+        {/* Contact Information */}
+        <Grid item xs={12} sm={6} md={4}>
+          <Typography
+            variant="h4"
+            sx={{ marginBottom: "20px", fontSize: "1.5rem" }}
+          >
+            Contact Information
+          </Typography>
+          <Box sx={{ fontSize: "0.9rem", lineHeight: 1.8 }}>
+            <Typography>
+              Address: B 57, East Jyoti Nagar, Shahdra, Delhi 110093
+            </Typography>
+            <Typography>Contact: +91-7827565682</Typography>
+            <Typography>Email: schoolerp2004@gmail.com</Typography>
+            <Typography>Timing: 10AM - 6PM</Typography>
+          </Box>
+        </Grid>
+      </Grid>
+    </Box>
   );
 }
 
