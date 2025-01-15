@@ -10,9 +10,10 @@ const Clients = ({ clientsData }) => {
         variant="h4"
         sx={{
           textAlign: "center",
-          fontWeight: "600",
-          marginBottom: "5vh",
-          fontSize: "2rem",
+          fontSize: "3rem",
+          fontWeight: "900",
+          paddingTop: "4vh",
+          color: "black",
         }}
       >
         {"Our Clients"}

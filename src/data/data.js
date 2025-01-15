@@ -118,7 +118,7 @@ const cardData = [
   {
     title: "Students",
     img: "/study66.png",
-    number: "00+",
+    number: "200000+",
   },
 ];
 
@@ -145,7 +145,7 @@ const factData = [
   {
     title: "Students",
     href: "/student.png",
-    num: "100000+",
+    num: "200000+",
   },
   {
     title: "Teachers",
