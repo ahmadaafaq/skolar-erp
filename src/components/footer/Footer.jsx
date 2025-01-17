@@ -56,10 +56,10 @@ export default function Footer() {
           </Typography>
           <Box sx={{ fontSize: "0.9rem", lineHeight: 1.8 }}>
             <Typography>
-              Address: B 57, East Jyoti Nagar, Shahdra, Delhi 110093
+              Address: A 3, Street No 1, Madhuvihar, Delhi 110092
             </Typography>
             <Typography>Contact: +91-7827565682</Typography>
-            <Typography>Email: schoolerp2004@gmail.com</Typography>
+            <Typography>Email: info@gmail.com</Typography>
             <Typography>Timing: 10AM - 6PM</Typography>
           </Box>
         </Grid>
