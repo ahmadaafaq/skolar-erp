@@ -1,9 +1,10 @@
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import imageSrc from "../../../public/purplebg.jpg";
 import ContactImg from "../../../public/imageimg.svg";
 import ContactForm from "./ContactForm";
 
 export default function Contact() {
+  const isMobile = useMediaQuery("(max-width:600px)");
   return (
     <Box
       width="100%"
@@ -19,15 +20,17 @@ export default function Contact() {
       }}
     >
       <ContactForm />
-      <Box
-        sx={{
-          height: "60vh",
-          width: "60vh",
-          backgroundImage: `url(${ContactImg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      ></Box>
+      {!isMobile && (
+        <Box
+          sx={{
+            height: "60vh",
+            width: "60vh",
+            backgroundImage: `url(${ContactImg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        ></Box>
+      )}
     </Box>
   );
 }
