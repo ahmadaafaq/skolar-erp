@@ -22,10 +22,40 @@ body {
 
 /* Card Container Styles */
 .card-container {
+  padding: 20px;
   display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   justify-content: space-evenly;
-  margin-top: -75px;
+  /* margin-top: -75px; */
   overflow-x: hidden; /* Prevent horizontal scrolling within this container */
+  margintop: 0px;
+  /* height: 45vh; */
+  align-items: center;
+  background-color: white;
+  gap: 20px;
+}
+
+.card-container > * {
+  flex: 1 1 calc(33.33% - 20px); /* Make cards responsive with 3 per row */
+  max-width: calc(
+    33.33% - 20px
+  ); /* Prevent them from exceeding the container */
+  box-sizing: border-box; /* Include padding and border in size calculations */
+}
+
+@media (max-width: 768px) {
+  .card-container > * {
+    flex: 1 1 calc(50% - 20px); /* Switch to 2 per row on smaller screens */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container > * {
+    flex: 1 1 calc(100% - 20px); /* Single card per row on very small screens */
+    max-width: calc(100% - 20px);
+  }
 }
 
 /* Hide Scrollbars Globally */

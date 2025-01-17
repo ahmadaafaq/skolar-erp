@@ -7,55 +7,65 @@ const Clients = ({ clientsData }) => {
   return (
     <Container sx={{ marginTop: "8vh", marginBottom: "20vh" }}>
       <Typography
-        variant="h4"
+        variant="h5"
         sx={{
           textAlign: "center",
-          fontSize: "3rem",
-          fontWeight: "900",
+          fontSize: "2rem",
+          fontWeight: "600",
           paddingTop: "4vh",
+          marginBottom: "4vh",
           color: "black",
         }}
       >
         {"Our Clients"}
       </Typography>
       <Carousel
-        autoPlay={false}
+        autoPlay={true}
+        interval={3000}
+        indicators={true}
+        animation="slide"
+        navButtonsAlwaysVisible={false}
         sx={{
           display: "flex",
           justifyContent: "space-between",
           flexWrap: "wrap",
+          height: { xs: "400px", sm: "400px", md: "400px" }, // Adjust height
         }}
       >
         {clientsData.map((client, i) => (
           <Box
+            key={i}
             sx={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-evenly",
-              height: "50vh",
-              width: "184vh",
-              borderRadius: "20px",
+              justifyContent: { xs: "center", md: "space-evenly" }, // Center for mobile, spaced for desktop
+              height: "100%",
+              flexDirection: { xs: "column", md: "row" }, // Stack on mobile, row on desktop
+              gap: { xs: 2, md: 2 }, // Gap between images
             }}
           >
-            <img height={"200vh"} key={i} src={clientsData[i].img} />
-            <img
-              height={"200vh"}
-              key={i}
-              src={
-                clientsData[i + 1]
-                  ? clientsData[i + 1].img
-                  : clientsData[0]?.img
-              }
-            />
-            <img
-              height={"200vh"}
-              key={i}
-              src={
-                clientsData[i + 2]
-                  ? clientsData[i + 2].img
-                  : clientsData[1]?.img
-              }
-            />
+            {[0, 1, 2].map((offset) => {
+              const clientIndex =
+                i + offset < clientsData.length
+                  ? i + offset
+                  : (i + offset) % clientsData.length;
+              return (
+                (offset === 0 || offset < 3) && (
+                  <img
+                    key={offset}
+                    src={clientsData[clientIndex]?.img}
+                    alt={`Client ${clientIndex}`}
+                    style={{
+                      maxWidth: "100%", // Responsive width
+                      width: "30%", // Ensure consistent width on desktop
+                      height: "auto", // Maintain aspect ratio
+                      objectFit: "contain", // Prevent distortion
+                      borderRadius: "10px",
+                    }}
+                  />
+                )
+              );
+            })}
           </Box>
         ))}
       </Carousel>

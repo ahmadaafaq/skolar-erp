@@ -16,11 +16,12 @@ export default function BasicCard({ cardData }) {
         height: "35vh",
         textAlign: "center",
         background: "#D5CFF4",
-        boxShadow: "2px -3px 27px 15px rgba(0,0,0,0.55);",
+        border: "1px solid red",
+        // boxShadow: "2px -3px 27px 15px rgba(0,0,0,0.55);",
         transition: "transform 0.2s ease-in-out", // Add transition property here
         ":hover": {
           transform: "scale(1.1)",
-          background: "white",
+          background: "#D5CFF4",
         },
       }}
     >
@@ -41,7 +42,7 @@ export default function BasicCard({ cardData }) {
           <Typography
             gutterBottom
             variant="h4"
-            sx={{ lineHeight: 1.2, marginBottom: "0vh" }}
+            sx={{ lineHeight: 1.2, marginBottom: "0vh", fontWeight: "700" }}
           >
             {cardData.number}
           </Typography>
