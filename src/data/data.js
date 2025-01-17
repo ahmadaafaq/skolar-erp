@@ -2,31 +2,31 @@
 const sliderData = [
   {
     title: "School Management System with Secure Cloud Storage",
-    img: "/pexels-hillaryfox-1595385.jpg",
+    img: "/school3.jpg",
     subTitle:
       "Most Innovative School Management ERP & Best Digital Transformation in Education System",
   },
   {
     title: "Best School ERP Software",
-    img: "/pexels-anastasiya-gepp-654466-1462630.jpg",
+    img: "/school1.jpg",
     subTitle:
       "Enabling connected schools, unlocking new possibilities. Anintegrated ecosystem of educational products that work together seamlessly.",
   },
   {
     title: "ERP Software For Schools in Delhi, India",
-    img: "/pexels-naomi-shi-374023-1001914.jpg",
+    img: "/school2.jpg",
     subTitle:
       "Most Innovative School Management ERP & Best Digital Transformation in Education Sector",
   },
   {
     title: "Education",
-    img: "/pexels-pixabay-289737.jpg",
+    img: "/school5th.jpg",
     subTitle:
       "Enabling connected schools, unlocking new possibilities. Anintegrated ecosystem of educational products that work together seamlessly",
   },
   {
     title: "Purpose of Education system",
-    img: "/pexels-zhuhehuai-716281.jpg",
+    img: "/schoolkids.jpg",
     subTitle:
       "Most Innovative School Management ERP & Best Digital Transformation in Education Sector",
   },

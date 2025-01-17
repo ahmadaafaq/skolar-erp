@@ -8,17 +8,22 @@ import Button from "@mui/material/Button";
 import { pages } from "../../data/data";
 import Logo from "../logo/logo";
 
-import "./appbar.css";
+import { useMediaQuery } from "@mui/material";
 
 function ResponsiveAppBar() {
+  const isMobile = useMediaQuery("(max-width:600px)");
+  const isTab = useMediaQuery("(min-width:601px) and (max-width:1400px)");
   return (
     <AppBar position="static" sx={{ backgroundColor: "white" }}>
       <Container
         maxWidth={"false"}
         sx={{
-          padding: "0 60px 0 45px",
+          padding: isMobile ? "" : isTab ? "" : "0 60px 0 45px",
+          display: "flex",
+          justifyContent: "flex-start",
           background:
             "linear-gradient(90deg, rgba(209,209,209,1) 0%, rgba(190,199,204,1) 48%);",
+          height: isMobile ? "14vh" : isTab ? "" : "",
         }}
       >
         <Toolbar disableGutters>
@@ -29,12 +34,10 @@ function ResponsiveAppBar() {
           <Box
             sx={{
               flexGrow: 1,
-              display: {
-                xs: "none",
-                md: "flex",
-                justifyContent: "flex-end",
-                paddingRight: "35px",
-              },
+              display: isMobile ? "flex" : isTab ? "flex" : "flex",
+              justifyContent: isMobile ? "flex-end" : isTab ? "" : "",
+              paddingRight: isMobile ? "" : isTab ? "" : "35px",
+              marginLeft: isMobile ? "22vw" : isTab ? "60vw" : "74vw",
             }}
           >
             {pages.map((page) => (
@@ -45,7 +48,7 @@ function ResponsiveAppBar() {
                   my: 2,
                   color: "black",
                   fontWeight: "700",
-                  fontSize: "1rem",
+                  fontSize: isMobile ? ".7rem" : "1rem",
                 }}
               >
                 {page.title}
