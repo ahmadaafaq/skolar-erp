@@ -8,17 +8,16 @@ const Fact = ({ factData }) => {
     <Container
       maxWidth="false"
       sx={{
-        height: "auto", // Allow height to adjust based on content
-        backgroundImage: "url('/fact-bg.jpg')",
+        height: "auto",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        padding: "5vh 2vh", // Add padding for better spacing on smaller screens
+        padding: "5vh 2vh",
       }}
     >
       <Typography
         sx={{
           textAlign: "center",
-          color: "black",
+          color: "white",
           marginBottom: "4vh",
           fontSize: "2rem",
           fontWeight: "600",
@@ -29,41 +28,45 @@ const Fact = ({ factData }) => {
       <Box
         sx={{
           display: "flex",
-          flexWrap: "wrap", // Allow wrapping for smaller screens
-          justifyContent: "center", // Center items
-          gap: { xs: "3vh", sm: "4vh", md: "5vh" }, // Responsive spacing between cards
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: { xs: "3vh", sm: "4vh", md: "5vh" },
         }}
       >
         {factData.map((card, i) => (
           <Box
-            key={i} // Moved `key` to the parent element
+            key={i}
             sx={{
-              height: { xs: "30vh", sm: "35vh" }, // Responsive height
-              width: { xs: "80vw", sm: "40vh", md: "35vh" }, // Adjust width for screens
+              height: { xs: "30vh", sm: "35vh" },
+              width: { xs: "80vw", sm: "40vh", md: "35vh" },
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              backgroundColor: "#bdb8d9",
+              backgroundImage: "url('gradient.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
               borderRadius: "20px",
               padding: "2vh",
-              textAlign: "center", // Center-align text
-              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)", // Add a shadow for better visibility
+              textAlign: "center",
+              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
             }}
           >
             <img
               height="50%"
               style={{
                 marginBottom: "1.5vh",
-                objectFit: "contain", // Ensure the image fits well
+                objectFit: "contain",
               }}
               src={card.href}
-              alt={card.title} // Add alt attribute for accessibility
+              alt={card.title}
             />
             <Typography
               variant="h4"
               fontWeight={600}
               sx={{
-                fontSize: { xs: "1.2rem", sm: "1.5rem", md: "2rem" }, // Responsive font size
+                fontSize: { xs: "1.2rem", sm: "1.5rem", md: "2rem" },
+                color: "white",
               }}
             >
               {card.num}
@@ -72,7 +75,8 @@ const Fact = ({ factData }) => {
               variant="h6"
               fontWeight={700}
               sx={{
-                fontSize: { xs: "1rem", sm: "1.2rem", md: "1.5rem" }, // Responsive font size
+                fontSize: { xs: "1rem", sm: "1.2rem", md: "1.5rem" },
+                color: "white",
               }}
             >
               {card.title}

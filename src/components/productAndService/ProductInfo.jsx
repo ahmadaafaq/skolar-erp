@@ -9,25 +9,21 @@ function ProductInfo() {
         alignItems: "center",
         width: "100%",
         maxWidth: "1200px",
-        padding: "10vh 2vh 7vh",
         fontFamily: "josh, sans-serif",
-        boxSizing: "border-box",
-        background: "linear-gradient(145deg, #f3f4f6, #e4e6eb)", // Subtle gradient background
-        borderRadius: "15px", // Add rounded corners
-        boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
+        padding: "10vh 2vh 7vh",
       }}
     >
       <Typography
         sx={{
-          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.2)", // Enhanced text shadow for better readability
-          color: "#cd211d",
+          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.2)",
+          color: "#ffc400",
           fontWeight: "800",
           textTransform: "uppercase",
           letterSpacing: ".3rem",
           lineHeight: "2rem",
           textAlign: "center",
           fontSize: { xs: "1rem", sm: "1.2rem", md: "1.4rem" },
-          marginBottom: "1rem", // Add spacing between elements
+          marginBottom: "1rem",
         }}
         variant="h6"
       >
@@ -41,7 +37,7 @@ function ProductInfo() {
           marginBottom: "1rem",
           fontSize: { xs: "1.8rem", sm: "2.5rem", md: "3rem" },
           lineHeight: "1.3em",
-          color: "#333333",
+          color: "white",
           textAlign: "center",
         }}
       >
@@ -52,7 +48,7 @@ function ProductInfo() {
         sx={{
           fontSize: { xs: "1rem", sm: "1.2rem", md: "1.4rem" },
           lineHeight: "1.8em",
-          color: "#555555",
+          color: "#ffc400",
           textAlign: "center",
           padding: { xs: "0 10px", sm: "0 20px", md: "0 50px" },
           maxWidth: "800px", // Limit text width for better readability

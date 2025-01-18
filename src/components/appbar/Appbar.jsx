@@ -21,9 +21,8 @@ function ResponsiveAppBar() {
           padding: isMobile ? "" : isTab ? "" : "0 60px 0 45px",
           display: "flex",
           justifyContent: "flex-start",
-          background:
-            "linear-gradient(90deg, rgba(209,209,209,1) 0%, rgba(190,199,204,1) 48%);",
-          height: isMobile ? "14vh" : isTab ? "" : "",
+          background: "black",
+          height: isMobile ? "14vh" : isTab ? "" : "15vh",
         }}
       >
         <Toolbar disableGutters>
@@ -46,7 +45,7 @@ function ResponsiveAppBar() {
                 key={page.title}
                 sx={{
                   my: 2,
-                  color: "black",
+                  color: "white",
                   fontWeight: "700",
                   fontSize: isMobile ? ".7rem" : "1rem",
                 }}
