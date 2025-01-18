@@ -14,7 +14,7 @@ const Clients = ({ clientsData }) => {
           fontWeight: "600",
           paddingTop: "4vh",
           marginBottom: "4vh",
-          color: "black",
+          color: "white",
         }}
       >
         {"Our Clients"}

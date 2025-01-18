@@ -14,7 +14,8 @@ export default function Contact() {
       justifyContent="space-evenly"
       alignItems="center"
       sx={{
-        backgroundImage: `url(${imageSrc})`,
+        // backgroundImage: `url(${imageSrc})`,
+        backgroundColor: "#00000",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

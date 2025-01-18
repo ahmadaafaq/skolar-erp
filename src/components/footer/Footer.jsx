@@ -58,8 +58,8 @@ export default function Footer() {
             <Typography>
               Address: A 3, Street No 1, Madhuvihar, Delhi 110092
             </Typography>
-            <Typography>Contact: +91-7827565682</Typography>
-            <Typography>Email: info@gmail.com</Typography>
+            <Typography>Contact: +91-9582929292</Typography>
+            <Typography>Email: info@skolar.com</Typography>
             <Typography>Timing: 10AM - 6PM</Typography>
           </Box>
         </Grid>

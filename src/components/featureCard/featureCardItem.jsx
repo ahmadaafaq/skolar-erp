@@ -10,22 +10,24 @@ export default function FeatureCardItem({ card }) {
   return (
     <Card
       sx={{
-        maxWidth: { xs: "100%", sm: "345px" }, // Full width on small screens, fixed width otherwise
-        minWidth: { sm: "300px" }, // Prevent cards from shrinking too much
-        background: "#D5CFF4",
-        boxShadow: "2px -3px 10px 10px rgba(210,210,220,0.55)",
-        border: "1px solid #745fdb",
+        maxWidth: { xs: "100%", sm: "345px" },
+        minWidth: { sm: "300px" },
         textAlign: "center",
         borderRadius: "20px",
         paddingTop: "10px",
         minHeight: "250px",
-        flex: "1 1 calc(33.33% - 20px)", // 3 cards per row with gaps
-        boxSizing: "border-box", // Include padding and borders in sizing
+        flex: "1 1 calc(33.33% - 20px)",
+        boxSizing: "border-box",
+        backgroundImage: "url('gradient.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        border: "2px solid white",
         "@media (max-width: 768px)": {
-          flex: "1 1 calc(50% - 20px)", // 2 cards per row on tablets
+          flex: "1 1 calc(50% - 20px)",
         },
         "@media (max-width: 480px)": {
-          flex: "1 1 100%", // 1 card per row on small screens
+          flex: "1 1 100%",
         },
       }}
       onMouseOver={() => setShowMedia(false)}
@@ -58,13 +60,31 @@ export default function FeatureCardItem({ card }) {
           </Box>
           <CardContent
             sx={{
-              position: "relative",
+              backgroundColor: "black",
+              height: "24vh",
             }}
           >
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              sx={{
+                color: "white",
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+              }}
+            >
               {card.title}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{
+                color: "white",
+                fontSize: ".9rem",
+                fontWeight: "bold",
+              }}
+            >
               {card.description}
             </Typography>
           </CardContent>
@@ -75,20 +95,30 @@ export default function FeatureCardItem({ card }) {
             <CardContent
               sx={{
                 position: "relative",
+                backgroundColor: "black",
+                bottom: "2vh",
               }}
             >
               <Typography
                 gutterBottom
                 variant="h5"
                 component="div"
-                sx={{ fontWeight: 700, fontFamily: "inherit" }}
+                sx={{
+                  color: "white",
+                  fontSize: "1.2rem",
+                  fontWeight: "bold",
+                }}
               >
                 {card.title}
               </Typography>
               <Typography
                 variant="body2"
                 color="text.secondary"
-                sx={{ fontWeight: 900 }}
+                sx={{
+                  color: "white",
+                  fontSize: ".9rem",
+                  fontWeight: "bold",
+                }}
               >
                 {card.description}
               </Typography>
