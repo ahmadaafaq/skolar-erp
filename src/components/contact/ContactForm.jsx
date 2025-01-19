@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
 import emailjs from "@emailjs/browser";
 import styled from "@emotion/styled";
+
 import {
   Box,
   Typography,
@@ -9,17 +11,24 @@ import {
   Button,
 } from "@mui/material";
 
-let InputComp = styled(TextField)`
+const InputComp = styled(TextField)`
   & .MuiOutlinedInput-root {
     & fieldset {
       border-color: white;
-      border-radius: 25px;
+      border-radius: 20px;
     }
-    &:hover {
-      fieldset {
-        border-color: #bb8fce;
-      }
+    & input {
+      color: white;
     }
+    &:hover fieldset {
+      border-color: white;
+    }
+  }
+  & label {
+    color: white;
+  }
+  & .MuiInputLabel-root.Mui-focused {
+    color: white;
   }
 `;
 
@@ -33,7 +42,6 @@ const ContactUs = () => {
   const submitForm = (e) => {
     e.preventDefault();
 
-    // Template parameters for EmailJS
     const templateParams = {
       email,
       firstName,
@@ -41,19 +49,17 @@ const ContactUs = () => {
       message,
     };
 
-    // Send email using EmailJS
     emailjs
       .send(
-        "service_zpbtoiy", // Replace with your EmailJS Service ID
-        "template_itdoyai", // Replace with your EmailJS Template ID
+        "service_zpbtoiy",
+        "template_itdoyai",
         templateParams,
-        "LQy4mhZpQYrhNVFRR" // Replace with your EmailJS Public Key
+        "LQy4mhZpQYrhNVFRR"
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           setSuccessMessage("Thank you! Your message has been sent.");
-          // Clear form fields
           setEmail("");
           setFirstName("");
           setSubject("");
@@ -67,11 +73,23 @@ const ContactUs = () => {
   };
 
   return (
-    <Box sx={{ width: "40%", margin: "30px" }}>
+    <Box
+      sx={{
+        width: { xs: "90%", sm: "70%", md: "50%" },
+        margin: "30px auto",
+        padding: { xs: "10px", sm: "20px" },
+        backgroundColor: "rgba(0, 0, 0, 0.8)",
+        borderRadius: "15px",
+      }}
+    >
       <Typography
         variant="h4"
         fontWeight={700}
-        sx={{ marginBottom: "20px", color: "white" }}
+        sx={{
+          marginBottom: "20px",
+          color: "white",
+          textAlign: "center",
+        }}
       >
         Contact Us
       </Typography>
@@ -91,7 +109,6 @@ const ContactUs = () => {
           variant="outlined"
           fullWidth
           value={firstName}
-          autoFocus={true}
           onChange={(e) => setFirstName(e.target.value)}
         />
 
@@ -126,18 +143,20 @@ const ContactUs = () => {
             padding: "10px",
             fontFamily: "inherit",
             fontSize: "inherit",
-            borderRadius: "25px",
+            borderRadius: "20px",
           }}
         />
 
         <Button
           variant="contained"
           type="submit"
-          color="primary"
           sx={{
             width: "200px",
             fontSize: "16px",
             alignSelf: "center",
+            borderRadius: "20px",
+            backgroundColor: "white",
+            color: "black",
           }}
         >
           Submit

@@ -1,6 +1,5 @@
 import { Box, useMediaQuery } from "@mui/material";
-import imageSrc from "../../../public/purplebg.jpg";
-import ContactImg from "../../../public/imageimg.svg";
+import ContactImg from "/imageimg.svg";
 import ContactForm from "./ContactForm";
 
 export default function Contact() {
@@ -14,7 +13,6 @@ export default function Contact() {
       justifyContent="space-evenly"
       alignItems="center"
       sx={{
-        // backgroundImage: `url(${imageSrc})`,
         backgroundColor: "#00000",
         backgroundSize: "cover",
         backgroundPosition: "center",

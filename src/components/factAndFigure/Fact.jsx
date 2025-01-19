@@ -1,4 +1,5 @@
 import React from "react";
+
 import Container from "@mui/material/Container";
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
@@ -42,7 +43,7 @@ const Fact = ({ factData }) => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              backgroundImage: "url('gradient.jpg')",
+              backgroundImage: "url('gradient1.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",

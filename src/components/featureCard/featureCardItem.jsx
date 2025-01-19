@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import { Box, Slide } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -18,7 +19,7 @@ export default function FeatureCardItem({ card }) {
         minHeight: "250px",
         flex: "1 1 calc(33.33% - 20px)",
         boxSizing: "border-box",
-        backgroundImage: "url('gradient.jpg')",
+        backgroundImage: "url('gradient1.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -62,6 +63,7 @@ export default function FeatureCardItem({ card }) {
             sx={{
               backgroundColor: "black",
               height: "24vh",
+              marginTop: "2vh",
             }}
           >
             <Typography

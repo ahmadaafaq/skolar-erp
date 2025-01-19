@@ -29,7 +29,7 @@ const Clients = ({ clientsData }) => {
           display: "flex",
           justifyContent: "space-between",
           flexWrap: "wrap",
-          height: { xs: "400px", sm: "400px", md: "400px" }, // Adjust height
+          height: { xs: "400px", sm: "400px", md: "400px" },
         }}
       >
         {clientsData.map((client, i) => (
@@ -38,10 +38,10 @@ const Clients = ({ clientsData }) => {
             sx={{
               display: "flex",
               alignItems: "center",
-              justifyContent: { xs: "center", md: "space-evenly" }, // Center for mobile, spaced for desktop
+              justifyContent: { xs: "center", md: "space-evenly" },
               height: "100%",
-              flexDirection: { xs: "column", md: "row" }, // Stack on mobile, row on desktop
-              gap: { xs: 2, md: 2 }, // Gap between images
+              flexDirection: { xs: "column", md: "row" },
+              gap: { xs: 2, md: 2 },
             }}
           >
             {[0, 1, 2].map((offset) => {
@@ -56,10 +56,10 @@ const Clients = ({ clientsData }) => {
                     src={clientsData[clientIndex]?.img}
                     alt={`Client ${clientIndex}`}
                     style={{
-                      maxWidth: "100%", // Responsive width
-                      width: "30%", // Ensure consistent width on desktop
-                      height: "auto", // Maintain aspect ratio
-                      objectFit: "contain", // Prevent distortion
+                      maxWidth: "100%",
+                      width: "30%",
+                      height: "auto",
+                      objectFit: "contain",
                       borderRadius: "10px",
                     }}
                   />

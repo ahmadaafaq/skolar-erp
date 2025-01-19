@@ -8,35 +8,39 @@ import Button from "@mui/material/Button";
 import { pages } from "../../data/data";
 import Logo from "../logo/logo";
 
-import { useMediaQuery } from "@mui/material";
-
 function ResponsiveAppBar() {
-  const isMobile = useMediaQuery("(max-width:600px)");
-  const isTab = useMediaQuery("(min-width:601px) and (max-width:1400px)");
   return (
     <AppBar position="static" sx={{ backgroundColor: "white" }}>
       <Container
-        maxWidth={"false"}
+        maxWidth="xl"
         sx={{
-          padding: isMobile ? "" : isTab ? "" : "0 60px 0 45px",
+          padding: { xs: "0 20px", sm: "0 40px", md: "0 60px" },
           display: "flex",
-          justifyContent: "flex-start",
+          justifyContent: "space-between",
+          alignItems: "center",
           background: "black",
-          height: isMobile ? "14vh" : isTab ? "" : "15vh",
+          height: { xs: "10vh", sm: "12vh", md: "15vh" },
         }}
       >
-        <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-          <Button href="/">
+        <Toolbar
+          disableGutters
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <Button href="/" sx={{ p: 0, minWidth: "auto" }}>
             <Logo />
           </Button>
           <Box
             sx={{
+              display: "flex",
+              flexDirection: { xs: "row", sm: "row" },
               flexGrow: 1,
-              display: isMobile ? "flex" : isTab ? "flex" : "flex",
-              justifyContent: isMobile ? "flex-end" : isTab ? "" : "",
-              paddingRight: isMobile ? "" : isTab ? "" : "35px",
-              marginLeft: isMobile ? "22vw" : isTab ? "60vw" : "74vw",
+              justifyContent: { xs: "center", sm: "flex-end" },
+              alignItems: "center",
+              gap: { xs: "10px", sm: "15px", md: "20px" },
             }}
           >
             {pages.map((page) => (
@@ -44,10 +48,10 @@ function ResponsiveAppBar() {
                 href={page.href}
                 key={page.title}
                 sx={{
-                  my: 2,
                   color: "white",
                   fontWeight: "700",
-                  fontSize: isMobile ? ".7rem" : "1rem",
+                  fontSize: { xs: "0.7rem", sm: "1rem" },
+                  textTransform: "none",
                 }}
               >
                 {page.title}
@@ -59,4 +63,5 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
+
 export default ResponsiveAppBar;
