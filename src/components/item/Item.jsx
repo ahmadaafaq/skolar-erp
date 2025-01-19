@@ -6,16 +6,16 @@ function Item(props) {
       disableGutters
       maxWidth={false}
       sx={{
-        height: "85vh", // Full viewport height
+        height: "85vh",
         backgroundImage: `url(${props.src})`,
-        backgroundSize: "cover", // Cover the entire container
-        backgroundRepeat: "no-repeat", // Prevent repeating
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        display: "flex", // Flexbox to center content
-        alignItems: "center", // Vertically center
-        justifyContent: "center", // Horizontally center
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
         position: "relative",
-        overflow: "hidden", // Ensure no overflow
+        overflow: "hidden",
       }}
     >
       {/* Overlay */}
@@ -26,7 +26,7 @@ function Item(props) {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor: "rgba(0, 0, 0, 0.5)", // Dark overlay
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
           zIndex: 1,
         }}
       ></Box>
@@ -35,10 +35,10 @@ function Item(props) {
       <Box
         sx={{
           color: "white",
-          zIndex: 2, // Above overlay
-          textAlign: "center", // Center text
+          zIndex: 2,
+          textAlign: "center",
           padding: "2rem",
-          maxWidth: "80%", // Limit text width for readability
+          maxWidth: "80%",
         }}
       >
         <Typography
@@ -47,9 +47,9 @@ function Item(props) {
           fontWeight={700}
           fontFamily="Georgia, serif"
           sx={{
-            fontSize: { xs: "2rem", sm: "3rem", md: "4rem" }, // Responsive font size
-            textShadow: "2px 2px 10px rgba(0, 0, 0, 0.7)", // Subtle text shadow for readability
-            marginBottom: "1rem", // Spacing below title
+            fontSize: { xs: "2rem", sm: "3rem", md: "4rem" },
+            textShadow: "2px 2px 10px rgba(0, 0, 0, 0.7)",
+            marginBottom: "1rem",
           }}
         >
           {props.title}
@@ -60,8 +60,8 @@ function Item(props) {
           fontWeight={500}
           letterSpacing={1}
           sx={{
-            fontSize: { xs: "1rem", sm: "1.5rem", md: "2rem" }, // Responsive font size
-            textShadow: "1px 1px 8px rgba(0, 0, 0, 0.7)", // Text shadow for subtitle
+            fontSize: { xs: "1rem", sm: "1.5rem", md: "2rem" },
+            textShadow: "1px 1px 8px rgba(0, 0, 0, 0.7)",
           }}
         >
           {props.subTitle}

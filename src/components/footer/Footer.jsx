@@ -1,5 +1,4 @@
-import SendIcon from "@mui/icons-material/Send";
-import { Container, Grid, Typography, Box } from "@mui/material";
+import { Grid, Typography, Box } from "@mui/material";
 import Logo from "../logo/logo";
 
 export default function Footer() {
@@ -67,53 +66,3 @@ export default function Footer() {
     </Box>
   );
 }
-
-// <Grid item sm={6} md={4} lg={4}>
-//   {/* <Typography variant="h4" sx={{ marginBottom: "5vh" }}>
-//     {"Newsletter"}
-//   </Typography> */}
-//   {/* <Typography variant="h7" sx={{ fontSize: ".9rem" }}>
-//     You will be notified when something new will appear.
-//   </Typography> */}
-//   {/* <FormControl
-//     sx={{
-//       display: "block",
-//       backgroundColor: "gray",
-//       marginTop: "50px",
-//       marginLeft: 0,
-//       borderRadius: "20px",
-//     }}
-//     variant="filled"
-//   >
-//     <InputLabel htmlForm="filled-adornment-email">
-//       Email Address
-//     </InputLabel>
-//     <FilledInput
-//       id="filled-adornment-email"
-//       sx={{
-//         backgroundColor:
-//           "linear-gradient(90deg, rgba(209,209,209,1) 0%, rgba(190,199,204,1) 48%);",
-//         width: "100%",
-//         borderRadius: 0,
-//       }}
-//       disableUnderline
-//       autoComplete="off"
-//       endAdornment={
-//         <InputAdornment position="end">
-//           <IconButton
-//             aria-label="email"
-//             onClick={() => {}}
-//             onMouseDown={() => {}}
-//             sx={{
-//               borderRadius: "20px",
-//               backgroundColor: "red",
-//             }}
-//             // edge="end"
-//           >
-//             <SendIcon />
-//           </IconButton>
-//         </InputAdornment>
-//       }
-//     />
-//   </FormControl> */}
-// </Grid>

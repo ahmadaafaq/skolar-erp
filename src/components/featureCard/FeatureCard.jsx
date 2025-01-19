@@ -9,10 +9,10 @@ export default function FeatureCard() {
       sx={{
         display: "flex",
         flexWrap: "wrap",
-        justifyContent: "center", // Center cards horizontally
+        justifyContent: "center",
         rowGap: "7vh",
-        columnGap: "20px", // Add horizontal spacing between cards
-        padding: { xs: "5vh 2vh", sm: "8vh 5vh", md: "10vh 20vh" }, // Adjust padding for different screen sizes
+        columnGap: "20px",
+        padding: { xs: "5vh 2vh", sm: "8vh 5vh", md: "10vh 20vh" },
       }}
     >
       {featureCardData.map((card, i) => (

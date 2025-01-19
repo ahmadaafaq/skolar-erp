@@ -32,8 +32,8 @@ function ProductInfo() {
       <Typography
         variant="h3"
         sx={{
-          fontWeight: "700", // Increase weight for emphasis
-          letterSpacing: "0.05em", // Slightly adjust spacing
+          fontWeight: "700",
+          letterSpacing: "0.05em",
           marginBottom: "1rem",
           fontSize: { xs: "1.8rem", sm: "2.5rem", md: "3rem" },
           lineHeight: "1.3em",
@@ -51,7 +51,7 @@ function ProductInfo() {
           color: "#ffc400",
           textAlign: "center",
           padding: { xs: "0 10px", sm: "0 20px", md: "0 50px" },
-          maxWidth: "800px", // Limit text width for better readability
+          maxWidth: "800px",
           marginTop: "0.5rem",
         }}
       >

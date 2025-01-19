@@ -3,14 +3,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden; /* Prevent horizontal scrolling on the page */
+  overflow-x: hidden;
   background-color: black;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit; /* Ensure consistent sizing across elements */
+  box-sizing: inherit;
 }
 
 /* Sub-header Styles */
@@ -18,7 +18,6 @@ body {
   display: flex;
   justify-content: flex-end;
   z-index: 0;
-  /* padding-bottom: 5px; */
 }
 
 /* Card Container Styles */

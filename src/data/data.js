@@ -123,12 +123,8 @@ const cardData = [
 ];
 
 const pages = [
-  // {
-  //   title:"logo",
-  //   href:"/",
-  // },
   {
-    title: "Home",
+    title: "HOME",
     href: "/",
   },
   {

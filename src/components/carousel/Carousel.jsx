@@ -4,7 +4,6 @@ import Item from "../item/Item";
 export default function ImgCarousel({ sliderImages }) {
   return (
     <Carousel autoPlay={true} sx={{ width: "100%" }}>
-      {/* we are running loop of sliderImages array,and populating the data(object) */}
       {sliderImages.map((item, i) => (
         <Item
           key={i}
