@@ -28,7 +28,12 @@ export default function Footer() {
           md={4}
           sx={{ display: "flex", gap: 2, alignItems: "center" }}
         >
-          <Box>
+          <Box
+            sx={{
+              width: { xs: "80vw", sm: "90vw", md: "30vw" },
+              height: "auto",
+            }}
+          >
             <Logo />
           </Box>
           <Typography
