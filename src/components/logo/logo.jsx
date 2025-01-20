@@ -5,10 +5,24 @@ export default function Logo() {
     <Box
       sx={{
         display: "flex",
-        border: "5px solid white",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "5px",
+        width: "100%",
+        maxWidth: "16vh",
+        height: "auto",
+        overflow: "hidden",
       }}
     >
-      <img src="/logo1.jpg" style={{ height: "13vh", width: "14vh" }} />
+      <img
+        src="/logo1.jpg"
+        alt="Logo"
+        style={{
+          width: "100%",
+          height: "auto",
+          objectFit: "contain",
+        }}
+      />
     </Box>
   );
 }

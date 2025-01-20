@@ -19,7 +19,7 @@ function ResponsiveAppBar() {
           justifyContent: "space-between",
           alignItems: "center",
           background: "black",
-          height: { xs: "10vh", sm: "12vh", md: "15vh" },
+          height: { xs: "12vh", sm: "12vh", md: "15vh" },
         }}
       >
         <Toolbar
